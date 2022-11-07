@@ -57,6 +57,10 @@ def isHTML(url):
     This function will determine whether a given url is an HTML file
     
     Parameters
+        url: a web address
+        
+    Return
+        A true or false value corrosponsing to whether the url is an HTML file
         
     """
     urltxt = web.urlopen(url)
@@ -65,9 +69,30 @@ def isHTML(url):
     return (htmlDec in textlib.normalize(urltxt)) 
     
 def username(first, last):
+    """
+    This function will create a username out of a given first and last name
+    
+    Parameters
+        first: a string, the first name
+        last: a string, the last name
+        
+    Return
+        A string containing the created username
+    """
     return str(last) + '_' + str(first[0])
 
 def replace(text, target, replacement):
+    """
+    This function will replace a target text in a string with a given replacement
+    
+    Parameters
+        text: The text in which the target will be replaced
+        target: The target text to be replaced
+        replacement: The text that the target will be replaced with
+    
+    Return
+        A new string with target replaced by the given replacement
+    """
     newText = ""
     start = 0
     for i in range(len(text)):
@@ -77,6 +102,15 @@ def replace(text, target, replacement):
     return newText
 
 def longestRun(text):
+    """
+    This function will count the longest concurrent sequence of a character in the text
+    
+    Parameters
+        text: The string in which runs of character will be searched for
+        
+    Return
+        An integer, the length of the longest run of characters in the text
+    """
     prevChar = ""
     run = 1
     longRun = 0
@@ -91,6 +125,9 @@ def longestRun(text):
     return longRun
         
 def difference(word1, word2):
+    """
+    This function will 
+    """
     
     length = 0
     maxLength = min(len(word1), len(word2))
@@ -112,6 +149,10 @@ def uniqueCharacters(text):
             uniqueList.append(text[i1])
     return len(uniqueList)
     
+        
+        
+        
+        
         
         
         
