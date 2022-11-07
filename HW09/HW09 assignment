@@ -1,0 +1,36 @@
+Assignment
+Write a function reverse(text) that returns a copy of the string text in reverse order.
+ 
+
+Write a function wordCountWeb(url) that reads the text file from the given URL and returns the number of words in the file using the wordCount function from your textlib Test your function on books from Project Gutenberg. Alternatively, you can access the plain text files on the author's website.
+ 
+
+According to the HTML standard specification, every HTML web page should begin with the declaration
+<!DOCTYPE html>
+This declaration is not case-sensitive and may contain additional elements such as
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+Write a function isHTML(url) that uses this information to detect whether a web page is an HTML document or not. The function should return True if it is HTML and False otherwise.
+
+ 
+
+Write a function string2Digit(digitString) that returns the integer value corresponding to the string digitString. The parameter will contain a single character '0', '1', . . . , '9'. Use the ord function. For example, string2Digit('5') should return the integer value 5.
+ 
+
+Write a function username(first, last) that constructs and returns a username, specified as the last name followed by an underscore and the first initial. For example, username('martin', 'freeman') should return the string 'freeman_m'.
+ 
+
+Write a function replace(text, target, replacement) that returns a new version of text in which all occurrences of the substring target are replaced with the string replacement. For example, replace('I am cool, very cool.', 'cool', 'very vain')) should return 'I am very vain, very very vain.'. Use a while loop; do not use the string method replace.
+ 
+
+Write a function difference(word1, word2) that returns the first index at which the strings word1 and word2 differ. If the words have different lengths, and the shorter word is a prefix of the longer word, the function should return the length of the shorter word. If the two words are the same, the function should return −1. Do this without directly testing whether word1 and word2 are equal.
+ 
+
+Write a function longestRun(text) that returns the length of the longest run of the same character in the string text. For example, longestRun('aabbbbcccd') should return 4.
+ 
+
+Write a function uniqueCharacters(text) that returns the number of characters that only appear once in the string text.
+ 
+
+Design thorough unit test cases for each function and put them in the unit_test function. Write a minimum of five test cases for each function.
