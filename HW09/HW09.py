@@ -165,7 +165,7 @@ def uniqueCharacters(text):
 
 
 def test_reverse():
-    
+    # test cases 
     return "reverse() passes all tests"
     
 def test_webWordCount():
@@ -201,7 +201,15 @@ def test_uniqueCharacters():
     return "uniqueCharacters() passes all tests "
 
 def test():
-    
+    print(test_reverse())
+    print(test_webWordCount())
+    print(test_string2Digit())
+    print(test_isHTML())
+    print(test_username())
+    print(test_replace())
+    print(test_longestRun())
+    print(test_difference())
+    print(test_uniqueCharacters())
     print("all tests passed")
 
 if __name__ == "__main__":
