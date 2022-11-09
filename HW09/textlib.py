@@ -11,7 +11,7 @@ def removePunctuation(text):
     Parameter: text, a string object
     Return value: a copy of text with punctuation removed
     """
-    text = str(text)
+    text = text
     newText = ''
     for character in text:
         if character not in string.punctuation:
